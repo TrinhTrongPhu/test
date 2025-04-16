@@ -1,0 +1,114 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box {
+    background-color: black;
+    height: 100%;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: grab;
+    
+}
+  
+.box input{
+    font-size: 26px;
+    width: 90%;
+    border-radius: 10px;
+    /* padding: 10px; */
+    color: white;
+    background-color: black;
+    border: 0cap;
+}
+
+.box-child{
+    display: block;
+    background-color: black;
+    height: 97px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.box-child input{
+    font-size: 16px;
+    width: 70%;
+    color: black;
+    height: 25px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.box-tag{
+    display: block;
+    background-color: black;
+    height: 90px;
+    width: 250px;
+    /* border-radius: 10px; */
+}
+
+.box-tag input{
+    margin: 5px 0px;
+    font-size: 16px;
+    width: 90%;
+    color: black;
+    height: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.box-tag input::after{
+    border: 2px solid blue;
+}
+.tag {
+    position: relative;
+    width: 250px;
+    margin: 10px 0;
+  }
+
+.tag .tag-input {
+    width: 80%;
+    padding: 8px 12px 8px 36px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    color: #333;
+  }
+
+.tag .tag-checkbox {
+    height: 20px;
+    width: 30px;
+    position: absolute;
+    left: 0px;
+    top: 45%;
+    transform: translateY(-50%);
+    display: block;
+  }
+
+.tag:hover .tag-checkbox,
+    .tag-checkbox:checked {
+    display: block;
+    cursor: pointer;
+}
+.tag:active {
+    opacity: 0.6;
+    cursor: grabbing;
+}
+
+.tag-input:hover{
+    border: 3px solid rgb(100, 100, 246);
+    cursor: pointer;
+}
+  
+button{
+    background-color: antiquewhite;
+    margin: 2px;
+}
